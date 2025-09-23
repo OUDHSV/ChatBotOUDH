@@ -19,7 +19,7 @@ export default function Chatbot() {
     <div className="flex flex-col w-full max-w-md mx-auto h-[600px] border border-gray-300 rounded-2xl shadow-lg overflow-hidden">
       {/* Header */}
       <div className="bg-[#0A1F44] flex items-center justify-center p-4">
-        <Image src="/oudh-logo.png" alt="OUDH Logo" width={60} height={60} />
+        <Image src="/oudh-logo.jpg" alt="OUDH Logo" width={60} height={60} />
       </div>
 
       {/* Messages */}
