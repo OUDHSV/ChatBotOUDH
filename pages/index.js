@@ -31,7 +31,7 @@ export default function Home() {
       {/* HEADER ELEGANTE */}
       <header className="bg-gradient-to-r from-blue-600 to-blue-400 text-white p-4 flex items-center justify-center space-x-3 shadow-md">
         <img
-          src="/jpeg.jpg"
+          src="/logo.png"
           alt="Logo"
           className="h-10 w-10 rounded-full border-2 border-white shadow"
         />
