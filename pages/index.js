@@ -14,34 +14,31 @@ export default function Chatbot() {
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: "🤖 Gracias por tu mensaje, pronto responderé con más datos." },
+        {
+          role: "bot",
+          text: "🤖 Gracias por tu mensaje, pronto responderé con más datos.",
+        },
       ]);
     }, 800);
     setInput("");
   };
 
   return (
-    <div className="flex flex-col w-full h-screen bg-[#2A3F73]">
+    <div className="flex flex-col w-full h-screen bg-gradient-to-br from-[#2A3F73] via-[#F7972B] to-[#898D8E]">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-8">
-        <Image
-          src="/oudh-logo.jpg"
-          alt="OUDH Logo"
-          width={180}
-          height={180}
-          className="rounded-full shadow-lg"
-        />
+        /oudh-logo.jpg
         <h1 className="text-white text-3xl font-bold mt-4 text-center">
           Tu asistente en Derechos Humanos 💬✨
         </h1>
       </div>
 
       {/* Chat messages */}
-      <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/95 rounded-t-3xl shadow-inner">
+      <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/95 rounded-t-3xl shadow-inner transition-all duration-300 ease-in-out">
         {messages.map((msg, i) => (
           <div
             key={i}
-            className={`px-5 py-3 rounded-2xl max-w-[75%] shadow-md ${
+            className={`px-5 py-3 rounded-2xl max-w-[75%] shadow-md transition-opacity duration-500 ${
               msg.role === "user"
                 ? "ml-auto bg-[#F7972B] text-white"
                 : "bg-[#EDEDED] text-[#2A3F73] border border-[#898D8E]"
