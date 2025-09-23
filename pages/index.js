@@ -35,7 +35,7 @@ export default function Chatbot() {
           className="rounded-full shadow  </div>
 
       {/* Chat messages */}
-      <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/95 rounded-t-3xl shadow-inner transition-all duration-300 ease-in-out">
+       <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/90 rounded-t-3xl shadow-inner transition-all duration-300 ease-in-out">
         {messages.map((msg, i) => (
           <div
             key={i}
