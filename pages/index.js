@@ -25,7 +25,7 @@ export default function Chatbot() {
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-8">
         <Image
-          src="/logo-oudh.jpg"
+          src="/oudh-logo.jpg"
           alt="OUDH Logo"
           width={180}
           height={180}
