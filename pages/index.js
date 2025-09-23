@@ -31,15 +31,16 @@ export default function Chatbot() {
           src="/oudh-logo.jpg"
           alt="OUDH Logo"
           width={180}
-          height={180}
-          className="rounded-full shadow  </div>
+           Tu asistente en Derechos Humanos✨
+        </h1>
+      </div>
 
       {/* Chat messages */}
-       <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/90 rounded-t-3xl shadow-inner transition-all duration-300 ease-in-out">
+      <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white bg-opacity-90 rounded-t-3xl">
         {messages.map((msg, i) => (
           <div
             key={i}
-            className={`px-5 py-3 rounded-2xl max-w-[75%] shadow-md transition-opacity duration-500 ${
+            className={`px-5 py-3 rounded-2xl max-w-[75%] ${
               msg.role === "user"
                 ? "ml-auto bg-[#F7972B] text-white"
                 : "bg-[#EDEDED] text-[#2A3F73] border border-[#898D8E]"
