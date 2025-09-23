@@ -27,7 +27,7 @@ export default function Home() {
       {/* HEADER minimalista */}
       <header className="flex flex-col items-center justify-center py-6 border-b bg-white shadow-sm">
         <img
-          src="/logo.png"
+          src="/jpeg.jpg"
           alt="Logo"
           className="h-14 w-14 mb-2"
         />
