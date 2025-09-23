@@ -27,11 +27,12 @@ export default function Chatbot() {
     <div className="flex flex-col w-full h-screen bg-gradient-to-br from-[#2A3F73] via-[#F7972B] to-[#898D8E]">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-8">
-        /oudh-logo.jpg
-        <h1 className="text-white text-3xl font-bold mt-4 text-center">
-          Tu asistente en Derechos Humanos✨
-        </h1>
-      </div>
+        <Image
+          src="/oudh-logo.jpg"
+          alt="OUDH Logo"
+          width={180}
+          height={180}
+          className="rounded-full shadow  </div>
 
       {/* Chat messages */}
       <div className="flex-1 p-6 space-y-4 overflow-y-auto bg-white/95 rounded-t-3xl shadow-inner transition-all duration-300 ease-in-out">
@@ -51,17 +52,15 @@ export default function Chatbot() {
 
       {/* Input */}
       <div className="p-4 bg-white flex gap-2 items-center border-t border-[#898D8E]">
-        
-<input
-  value={input}
-  onChange={(e) => setInput(e.target.value)}
-  onKeyDown={(e) => {
-    if (e.key === "Enter") sendMessage();
-  }}
-  placeholder="Escribe tu mensaje..."
-  className="flex-1 p-3 rounded-full border border-[#898D8E] text-[#2A3F73] placeholder-[#898D8E] focus:outline-none focus:ring-2 focus:ring-[#F7972B]"
-/>
-
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") sendMessage();
+          }}
+          placeholder="Escribe tu mensaje..."
+          className="flex-1 p-3 rounded-full border border-[#898D8E] text-[#2A3F73] placeholder-[#898D8E] focus:outline-none focus:ring-2 focus:ring-[#F7972B]"
+        />
         <button
           onClick={sendMessage}
           className="bg-[#F7972B] text-white px-5 py-3 rounded-full hover:bg-orange-600 transition transform hover:scale-105"
