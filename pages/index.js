@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ChatbotUI() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <Image src="/logo.png" alt="Logo OUDH" width={80} height={80} className="mb-4" />
+      <Image src="/jpeg.jpg" alt="Logo OUDH" width={80} height={80} className="mb-4" />
 
       <h1 className="text-3xl font-bold text-gray-800 mb-6">💬 Asistente OUDH</h1>
 
