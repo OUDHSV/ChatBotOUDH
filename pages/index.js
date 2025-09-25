@@ -30,8 +30,8 @@ export default function Chatbot() {
         <Image
           src="/oudh-logo.jpg"
           alt="OUDH Logo"
-          width={180}
-           Tu asistente en Derechos Humanos✨
+         text-center">
+          Tu asistente en Derechos Humanos✨
         </h1>
       </div>
 
