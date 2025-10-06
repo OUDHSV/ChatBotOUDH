@@ -27,7 +27,7 @@ export default function Chatbot() {
     <div className="flex flex-col w-full h-screen bg-gradient-to-br from-[#2A3F73] via-[#F7972B] to-[#898D8E]">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-8">
-        /logo.png
+        /Designer.png
         <h1 className="text-white text-2xl font-bold mt-4 text-center">
           Tu asistente en Derechos Humanos✨
         </h1>
