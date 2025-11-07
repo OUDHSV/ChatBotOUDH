@@ -27,7 +27,7 @@ export default function Chatbot() {
     <div className="flex flex-col w-full h-screen bg-gradient-to-br from-[#2A3F73] via-[#F7972B] to-[#898D8E]">
       {/* Header */}
       <div className="flex flex-col items-center justify-center py-8">
-        /Designer.png
+        <Image src="/logo-oudh.jpg" alt="Logo OUDH" width={150} height={150} className="rounded-full shadow-lg" />
         <h1 className="text-white text-2xl font-bold mt-4 text-center">
           Tu asistente en Derechos Humanos✨
         </h1>
@@ -69,3 +69,4 @@ export default function Chatbot() {
       </div>
     </div>
   );
+}
